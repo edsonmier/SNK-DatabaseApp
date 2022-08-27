@@ -107,6 +107,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="130dp"
+                android:layout_marginBottom="10dp"
                 android:orientation="horizontal">
 
                 <LinearLayout
@@ -136,7 +137,7 @@
                     </FrameLayout>
 
                     <LinearLayout
-                        android:layout_width="150dp"
+                        android:layout_width="200dp"
                         android:layout_height="match_parent"
                         android:layout_marginLeft="10dp"
                         android:gravity="center_vertical"
@@ -176,6 +177,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="130dp"
+                android:layout_marginBottom="10dp"
                 android:orientation="horizontal">
 
                 <LinearLayout
@@ -198,14 +200,15 @@
 
                         <ImageView
                             android:id="@+id/imageView6"
-                            android:layout_width="120dp"
-                            android:layout_height="120dp"
+                            android:layout_marginTop="50dp"
+                            android:layout_width="150dp"
+                            android:layout_height="200dp"
                             android:layout_gravity="center"
-                            app:srcCompat="@drawable/eren" />
+                            app:srcCompat="@drawable/mikasa" />
                     </FrameLayout>
 
                     <LinearLayout
-                        android:layout_width="150dp"
+                        android:layout_width="200dp"
                         android:layout_height="match_parent"
                         android:layout_marginLeft="10dp"
                         android:gravity="center_vertical"
@@ -216,18 +219,18 @@
                             android:layout_width="match_parent"
                             android:layout_height="25dp"
                             android:fontFamily="@font/poppins"
-                            android:text="EREN JAEGER"
+                            android:text="MIKASA ACKERMAN"
                             android:textColor="#FFFFFF"
                             android:textSize="20dp"
                             android:textStyle="bold" />
 
                         <TextView
                             android:id="@+id/textView10"
-                            android:layout_width="match_parent"
+                            android:layout_width="wrap_content"
                             android:layout_height="18dp"
                             android:fontFamily="@font/poppins"
                             android:gravity="center_vertical"
-                            android:text="DESCONOCIDO"
+                            android:text="LEGIÓN DE RECONOCIMIENTO"
                             android:textColor="#FFFFFF"
                             android:textSize="12dp" />
 
@@ -270,11 +273,11 @@
                             android:layout_width="120dp"
                             android:layout_height="120dp"
                             android:layout_gravity="center"
-                            app:srcCompat="@drawable/eren" />
+                            app:srcCompat="@drawable/levi" />
                     </FrameLayout>
 
                     <LinearLayout
-                        android:layout_width="150dp"
+                        android:layout_width="200dp"
                         android:layout_height="match_parent"
                         android:layout_marginLeft="10dp"
                         android:gravity="center_vertical"
@@ -285,7 +288,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="25dp"
                             android:fontFamily="@font/poppins"
-                            android:text="EREN JAEGER"
+                            android:text="LEVI ACKERMAN"
                             android:textColor="#FFFFFF"
                             android:textSize="20dp"
                             android:textStyle="bold" />
@@ -296,7 +299,7 @@
                             android:layout_height="18dp"
                             android:fontFamily="@font/poppins"
                             android:gravity="center_vertical"
-                            android:text="DESCONOCIDO"
+                            android:text="CAPITÁN DE ESCUADRÓN"
                             android:textColor="#FFFFFF"
                             android:textSize="12dp" />
 
