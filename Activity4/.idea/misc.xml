@@ -5,7 +5,8 @@
       <map>
         <entry key="app/src/main/res/drawable/circle_shape.xml" value="0.1485" />
         <entry key="app/src/main/res/drawable/shape_widget.xml" value="0.1485" />
-        <entry key="app/src/main/res/layout/activity_main.xml" value="0.303094482421875" />
+        <entry key="app/src/main/res/drawable/shape_widget_white.xml" value="0.1485" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.36951095808797807" />
       </map>
     </option>
   </component>
