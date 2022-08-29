@@ -7,23 +7,36 @@
     android:background="@drawable/background"
     tools:context=".MainActivity" >
 
+    <FrameLayout
+        android:id="@+id/dimmer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.5"
+        android:background="#000000"
+        android:translationZ="1dp"
+        android:visibility="invisible">
+
+    </FrameLayout>
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:gravity="bottom"
-        android:translationZ="1dp">
+        android:gravity="bottom|center_horizontal"
+        android:translationZ="2dp">
 
         <FrameLayout
             android:id="@+id/fragment_container"
-            android:layout_width="match_parent"
+            android:layout_width="370dp"
             android:layout_height="580dp">
 
         </FrameLayout>
     </RelativeLayout>
 
     <LinearLayout
+        android:id="@+id/mainFrame"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="@drawable/background"
         android:orientation="vertical">
 
         <LinearLayout
@@ -97,20 +110,20 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="70dp"
-            android:orientation="horizontal"
-            android:gravity="center">
+            android:gravity="center"
+            android:orientation="horizontal">
 
             <TextView
                 android:id="@+id/textView4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:textAlignment="center"
                 android:fontFamily="@font/poppins"
+                android:text="PERSONAJES"
+                android:textAlignment="center"
                 android:textColor="#28006D"
-                android:textStyle="bold"
                 android:textSize="30dp"
-                android:text="PERSONAJES" />
+                android:textStyle="bold" />
         </LinearLayout>
 
         <LinearLayout
@@ -127,20 +140,20 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:orientation="horizontal"
-                    android:gravity="center"
                     android:layout_marginLeft="30dp"
-                    android:layout_marginRight="30dp"
                     android:layout_marginTop="10dp"
+                    android:layout_marginRight="30dp"
                     android:layout_marginBottom="10dp"
-                    android:background="@drawable/shape_widget">
+                    android:background="@drawable/shape_widget"
+                    android:gravity="center"
+                    android:orientation="horizontal">
 
                     <FrameLayout
                         android:layout_width="100dp"
                         android:layout_height="100dp"
+                        android:background="@drawable/circle_shape"
                         android:clipToOutline="true"
-                        android:clipToPadding="true"
-                        android:background="@drawable/circle_shape">
+                        android:clipToPadding="true">
 
                         <ImageView
                             android:id="@+id/imageView4"
@@ -182,13 +195,14 @@
                             android:layout_width="wrap_content"
                             android:layout_height="22dp"
                             android:background="@drawable/shape_widget_white"
+                            android:onClick="onClick"
                             android:text="LEER MÁS"
                             android:textColor="#28006D"
-                            android:textSize="10dp"
-                            android:onClick="onClick"/>
+                            android:textSize="10dp" />
                     </LinearLayout>
                 </LinearLayout>
             </LinearLayout>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="130dp"
@@ -198,27 +212,27 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:orientation="horizontal"
-                    android:gravity="center"
                     android:layout_marginLeft="30dp"
-                    android:layout_marginRight="30dp"
                     android:layout_marginTop="10dp"
+                    android:layout_marginRight="30dp"
                     android:layout_marginBottom="10dp"
-                    android:background="@drawable/shape_widget">
+                    android:background="@drawable/shape_widget"
+                    android:gravity="center"
+                    android:orientation="horizontal">
 
                     <FrameLayout
                         android:layout_width="100dp"
                         android:layout_height="100dp"
+                        android:background="@drawable/circle_shape"
                         android:clipToOutline="true"
-                        android:clipToPadding="true"
-                        android:background="@drawable/circle_shape">
+                        android:clipToPadding="true">
 
                         <ImageView
                             android:id="@+id/imageView6"
-                            android:layout_marginTop="50dp"
                             android:layout_width="150dp"
                             android:layout_height="200dp"
                             android:layout_gravity="center"
+                            android:layout_marginTop="50dp"
                             app:srcCompat="@drawable/mikasa" />
                     </FrameLayout>
 
@@ -260,6 +274,7 @@
                     </LinearLayout>
                 </LinearLayout>
             </LinearLayout>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="130dp"
@@ -268,20 +283,20 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:orientation="horizontal"
-                    android:gravity="center"
                     android:layout_marginLeft="30dp"
-                    android:layout_marginRight="30dp"
                     android:layout_marginTop="10dp"
+                    android:layout_marginRight="30dp"
                     android:layout_marginBottom="10dp"
-                    android:background="@drawable/shape_widget">
+                    android:background="@drawable/shape_widget"
+                    android:gravity="center"
+                    android:orientation="horizontal">
 
                     <FrameLayout
                         android:layout_width="100dp"
                         android:layout_height="100dp"
+                        android:background="@drawable/circle_shape"
                         android:clipToOutline="true"
-                        android:clipToPadding="true"
-                        android:background="@drawable/circle_shape">
+                        android:clipToPadding="true">
 
                         <ImageView
                             android:id="@+id/imageView8"
