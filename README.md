@@ -5,4 +5,5 @@ Repositorio que contiene un proyecto de prueba para Android Studio.
 -> Utilizar fragmentos para obtener información de distintos personajes.
 
 ## SHOWCASE
-<video src="https://i.imgur.com/8rdrPTC.mp4" />
+
+https://user-images.githubusercontent.com/99059140/187206455-a9cac529-51d7-4bed-9abb-e143032557a6.mp4
