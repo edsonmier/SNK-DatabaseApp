@@ -11,10 +11,10 @@ import androidx.transition.Slide;
 import android.os.Bundle;
 import android.widget.LinearLayout;
 
-public class MainActivity extends AppCompatActivity {
+import com.google.android.material.bottomsheet.BottomSheetDialogFragment;
 
-    FragmentTransaction transaction;
-    Fragment erenInfo, mikasaInfo, leviInfo;
+public class MainActivity extends AppCompatActivity {
+    BottomSheetDialogFragment erenInfo, mikasaInfo, leviInfo;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,16 +22,18 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         erenInfo = new ErenInfo();
+        mikasaInfo = new MikasaInfo();
+        leviInfo = new LeviInfo();
     }
 
     public void onClick(View view) {
-        transaction=getSupportFragmentManager().beginTransaction();
         switch (view.getId()){
-            case R.id.button: transaction.replace(R.id.fragment_container, erenInfo);
-                findViewById(R.id.dimmer).setVisibility(1);
-                transaction.setCustomAnimations(R.animator.slide_in, R.animator.slide_out);
-                transaction.addToBackStack(null); break;
+            case R.id.button:
+                erenInfo.show(getSupportFragmentManager(), "TAG"); break;
+            case R.id.butto2:
+                mikasaInfo.show(getSupportFragmentManager(), "TAG"); break;
+            case R.id.button3:
+                leviInfo.show(getSupportFragmentManager(), "TAG"); break;
         }
-        transaction.commit();
     }
 }

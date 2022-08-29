@@ -9,8 +9,11 @@
         <entry key="app/src/main/res/drawable/slide_in.xml" value="0.1485" />
         <entry key="app/src/main/res/drawable/slide_out.xml" value="0.1485" />
         <entry key="app/src/main/res/drawable/widget_shape_trans.xml" value="0.1" />
-        <entry key="app/src/main/res/layout/activity_main.xml" value="0.24359283447265626" />
-        <entry key="app/src/main/res/layout/fragment_eren_info.xml" value="0.29478078607616737" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.3468353271484375" />
+        <entry key="app/src/main/res/layout/fragment_eren_info.xml" value="0.2784313725490196" />
+        <entry key="app/src/main/res/layout/fragment_levi_info.xml" value="0.2947916666666667" />
+        <entry key="app/src/main/res/layout/fragment_mikasa_info.xml" value="0.3098958333333333" />
+        <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.1485" />
       </map>
     </option>
   </component>

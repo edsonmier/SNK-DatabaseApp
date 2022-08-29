@@ -5,32 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background"
-    tools:context=".MainActivity" >
-
-    <FrameLayout
-        android:id="@+id/dimmer"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:alpha="0.5"
-        android:background="#000000"
-        android:translationZ="1dp"
-        android:visibility="invisible">
-
-    </FrameLayout>
-
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="bottom|center_horizontal"
-        android:translationZ="2dp">
-
-        <FrameLayout
-            android:id="@+id/fragment_container"
-            android:layout_width="370dp"
-            android:layout_height="580dp">
-
-        </FrameLayout>
-    </RelativeLayout>
+    tools:context=".MainActivity">
 
     <LinearLayout
         android:id="@+id/mainFrame"
@@ -270,7 +245,8 @@
                             android:background="@drawable/shape_widget_white"
                             android:text="LEER MÁS"
                             android:textColor="#28006D"
-                            android:textSize="10dp" />
+                            android:textSize="10dp"
+                            android:onClick="onClick"/>
                     </LinearLayout>
                 </LinearLayout>
             </LinearLayout>
@@ -340,7 +316,8 @@
                             android:background="@drawable/shape_widget_white"
                             android:text="LEER MÁS"
                             android:textColor="#28006D"
-                            android:textSize="10dp" />
+                            android:textSize="10dp"
+                            android:onClick="onClick"/>
                     </LinearLayout>
                 </LinearLayout>
             </LinearLayout>

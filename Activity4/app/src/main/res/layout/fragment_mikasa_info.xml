@@ -1,14 +1,66 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MikasaInfo">
+    tools:context=".MikasaInfo"
+    app:layout_behavior="@string/bottom_sheet_behavior">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:orientation="vertical"
+        android:background="@drawable/shape_widget">
 
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_marginTop="2dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/badge" />
+
+        <FrameLayout
+            android:layout_marginTop="40dp"
+            android:layout_width="330dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:background="@drawable/widget_shape_trans"
+            android:clipToOutline="true"
+            android:clipToPadding="true">
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="500dp"
+                android:layout_height="500dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/mikasa_ackerman" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="330dp"
+            android:layout_height="55dp"
+            android:layout_gravity="center"
+            android:fontFamily="@font/poppins"
+            android:text="MIKASA ACKERMAN"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/white"
+            android:textSize="35dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="330dp"
+            android:layout_marginTop="5dp"
+            android:layout_gravity="center"
+            android:layout_height="350dp"
+            android:fontFamily="@font/poppins"
+            android:textColor="@color/white"
+            android:textSize="15dp"
+            android:text="Mikasa Ackerman es la hermana adoptiva de Eren Jaeger. Le debe mucho a él, desde que la salvó de los secuestradores que pretendían convertirla en esclava, y pasa la mayor parte de su tiempo juntos. Así pues, aunque a veces no esté de acuerdo con lo que hace, pero lo protege de cualquiera que trate de hacerle daño.  Actualmente lucha ferozmente contra los Jaegeristas y busca recuperar a Eren de la locura y detener su plan de destruir al resto de la humanidad para salvar el planeta." />
+
+    </LinearLayout>
 </FrameLayout>
